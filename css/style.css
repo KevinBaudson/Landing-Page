@@ -159,11 +159,7 @@
     gap: 10px;
 }
 @keyframes animePort{
-    0%{
-        transform: scale(0.9);
-    }
-    
-    100%{
+    from{
         transform: scale(1.1);
     }
 }
