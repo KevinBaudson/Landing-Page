@@ -66,7 +66,7 @@ section {
 }
 
 .text-main {
-  max-width: 500px;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -76,7 +76,8 @@ section {
 .btn-curriculo {
   background-color: var(--primary-color);
   color: white;
-  padding: 8px 18px;
+  font-size: 1.3rem;
+  padding: 10px 20px;
   margin-top: 15px;
   border-radius: 30px;
   font-weight: 600;
@@ -90,11 +91,16 @@ section {
 }
 
 .intro {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
+
+}
+
+.img-me{
+  max-width: 350px;
 }
 
 .cards-techs {
@@ -135,7 +141,7 @@ section {
   filter: drop-shadow(0 0 4px var(--primary-color));
 }
 
-/* ========== Sobre Mim ========== */
+
 .text-techs .sobre {
   max-width: 600px;
   padding: 10px;
@@ -144,7 +150,6 @@ section {
   line-height: 1.5;
 }
 
-/* ========== Portfólio ========== */
 .title-port {
   text-align: center;
   margin-top: 2rem;
@@ -263,15 +268,22 @@ li a{
 }
 
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 780px) {
   .intro {
+    margin-top: 50px;
     flex-direction: column;
     gap: 1.5rem;
   }
-
+  .text-main{
+    width: 80% ;
+  }
   .cards-techs {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     justify-items: center;
+  }
+
+  .email{
+    text-align: center;
   }
 }
 
