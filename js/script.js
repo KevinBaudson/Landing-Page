@@ -1,24 +1,4 @@
 
-// const btnMobile = document.querySelector("#btn-menu")
-
-// btnMobile.addEventListener('click',()=>{
-    
-//     let menuMobile = document.querySelector("#navbar-mob")
-//    if(menuMobile){  
-//         menuMobile.classList.toggle('nav-mobile')
-//    }
-// })
-
-// const lastOne = document.querySelector('.last-one')
-
-// const myObserver = new IntersectionObserver((event)=>{
-//      console.log(event)
-// })
-
-// myObserver.observe(lastOne)
-
-//atalho para comentar é ctrl + ;
-
 const myObserver = new IntersectionObserver((entries)=>{
      entries.forEach((entry)=>{
           if(entry.isIntersecting){
@@ -30,10 +10,30 @@ const myObserver = new IntersectionObserver((entries)=>{
 })
 const elements = document.querySelectorAll('.sections')
 
-//aqui ele passa a observar cada elemento que tem a classe sections
 
 elements.forEach((element)=>{
      myObserver.observe(element)
 })
 
 
+const toggleButton = document.getElementById('toggle-theme');
+const body = document.body;
+
+// Verifica se há preferência salva no localStorage
+if (localStorage.getItem('theme') === 'dark') {
+  body.classList.add('dark-theme');
+  toggleButton.textContent = '☀️';
+}
+
+// Evento de clique para alternar o tema
+toggleButton.addEventListener('click', () => {
+  body.classList.toggle('dark-theme');
+
+  if (body.classList.contains('dark-theme')) {
+    toggleButton.textContent = '☀️';
+    localStorage.setItem('theme', 'dark');
+  } else {
+    toggleButton.textContent = '🌙';
+    localStorage.setItem('theme', 'light');
+  }
+});

@@ -1,173 +1,275 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/favicon-16x16.png"
+      type="image/x-icon"
+    />
     <title>Kevin Baudson</title>
     <script src="./js/script.js" defer></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto:wght@100;400;500;700;900&family=Sarala:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto:wght@100;400;500;700;900&family=Sarala:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <h1 class="title">Kevin Baudson</h1>
-        </nav>
+      <nav class="navbar">
+        <button id="toggle-theme" class="theme-btn">🌙</button>
+      </nav>
     </header>
 
     <main id="main">
-        <section class="apresentacao">
-            <section class="about-me sections hidden">
-                <h2 class="title-h2">Olá, sou <span class="orange">Kevin</span>!</h2>
-                <p>Desenvolvedor Web.</p>
-                <p>Front-end</p>
-                
-            </section>
-            <section class="sections hidden">
-                <picture><img src="./img/eu.png" alt="foto principal" class="img-eu"></picture>
-            </section>
+      <section class="intro">
+        <section class="text-main sections hidden">
+          <h1 class="title-h2">
+            Olá, eu sou <span class="name">Kevin Baudson</span>!
+          </h1>
+          <p>Desenvolvedor Web apaixonado por tecnologia.</p>
+          <p>
+            Atuo no desenvolvimento Front-end e estudo Back-end para me tornar
+            um profissional completo.
+          </p>
+          <a href="assets/kevin_baudson_curriculo.pdf" target="_blank">
+            <button class="btn-curriculo">Currículo</button>
+          </a>
         </section>
-        <section  class="sections hidden text-card-apresentation">
-            <h2>Algumas das tecnologias que <span class="orange">utilizo</span>!</h2>
-            <p>Muitas tecnologias são usadas para a criação de websites, entre tantas algumas se destacam:</p>
-            
+        <section class="sections hidden">
+          <picture
+            ><img src="./img/eu.png" alt="foto principal" class="img-eu"
+          /></picture>
         </section>
-        
-        <!-- inicio da seção de cards -->
-        <section class="cards-responsive">
-            <section class="sections hidden cards">
-                <section class="sections hidden card">
-                    <div class=""><img class="img-card" src="./img/html5-svgrepo-com.svg" alt="imagem javascript"></div>
-                    <h2>HTML</h2>
-            
-                </section>
-                <section class="sections hidden card">
-                    <div class=""><img class="img-card" src="./img/css3-svgrepo-com.svg" alt="imagem javascript"></div>
-                    <h2>CSS</h2>
-            
-                </section>
-                <section class="sections hidden card">
-                    <div class=""><img class="img-card" src="./img/javascript-svgrepo-com.svg" alt="imagem javascript"></div>
-                    <h2>JAVASCRIPT</h2>
-                </section>
-            
-                <section class="sections hidden card">
-                    <div class=""><img class="img-card" src="./img/bootstrap-svgrepo-com.svg"></div>
-                    <h2>BOOTSTRAP</h2>
-            
-                </section>
-                <section class="sections hidden card">
-                    <div><img class="img-card" src="./img/php-svgrepo-com.svg"></div>
-                    <h2>PHP</h2>
-                </section>
-                <section class="sections hidden card">
-                    <div><img class="img-card" src="./img/react-svgrepo-com.svg"></div>
-                    <h2>REACT</h2>
-                </section>
-            
-            </section>
-        </section>
-        
-        <!-- inicio SOBRE MIM -->
-        <section class="sections hidden cards-sobre">
-            <div class="sobre">
-                <h2>Sobre <span class="orange">mim</span>!</h2>
-                <p>Atualmente cursando Análise e desenvolvimento de sistemas.</p>
-                <p>Interessado em front end e back end.</p>
-                <p>Buscando oportunidade para atuar como programador.</p>
-            </div>
-            
-        </section>
+      </section>
+      <section class="sections hidden text-techs">
+        <h2>Tecnologias que <span class="name">utilizo</span>!</h2>
+        <p>
+          Utilizo ferramentas e linguagens modernas para criar aplicações web
+          eficientes e responsivas. Estou sempre aprendendo e buscando aprimorar
+          minhas habilidades.
+        </p>
+      </section>
 
-        <!-- inicio section portifolio -->
-        
-        <h2 class="title-port"><span class="orange">PORTIFÓLIO</span>!</h2>
-        <section class=" sections hidden portifolios">
-                <section class="portifolio">
-                    <img src="./img/telablogliterario.png" alt="logo kbm">
-                    <h3>Blog Literário</h3>
-                    <p>Utilizando slider da lib swiper</p>
-                    <button class="btn-port"><a href="https://github.com/KevinBaudson/blogliterario" target="_blank">Code</a></button>
-                    <button class="btn-port"><a href="https://kevinbaudson.github.io/blogliterario/" target="_blank">App</a></button>
-                </section>
-             <section class="portifolio">
-                    <img src="./img/topmovies.png" alt="logo kbm">
-                    <h3>TopFilmes</h3>
-                    <p>Projeto com React JS, Integrando API do TMDB</p>
-                    <button class="btn-port"><a href="https://github.com/KevinBaudson/topmovies" target="_blank">Code</a></button>
-                    <button class="btn-port"><a href="https://topmovies-lake.vercel.app/" target="_blank">App</a></button>
-                </section>
-                <section class="portifolio">
-                    <img src="./img/app-relogio.png" alt="logo kbm">
-                    <h3>Relógio Digital</h3>
-                    <p>Feito com HTML, CSS e JavaScript</p>
-                    <button class="btn-port"><a href="https://github.com/KevinBaudson/APPRELOGIO" target="_blank">Code</a></button>
-                    <button class="btn-port"><a href="https://kevinbaudson.github.io/APPRELOGIO/" target="_blank">App</a></button>
-                </section>
-                
-                <section class="portifolio">
-                    <img src="./img/tela-app.png" alt="Gallery">
-                    <h3>Galeria de Produtos!</h3>
-                     <p>Feito com API Fetch - Dummy</p>
-                     <button class="btn-port"><a href="https://github.com/KevinBaudson/product_gallery" target="_blank">Code</a></button>
-                    <button class="btn-port"><a href="https://kevinbaudson.github.io/product_gallery/" target="_blank">App</a></button>
-                </section>
-                <section class="portifolio">
-                    <img src="./img/imagem-app.png" alt="logo kbm">
-                    <h3>TO-DO List</h3>
-                    <p>Feito com HTML, CSS e JavaScript</p>
-                    <button class="btn-port"><a href="https://github.com/KevinBaudson/bloco-de-anota-es---APP" target="_blank">Code</a></button>
-                    <button class="btn-port"><a href="https://kevinbaudson.github.io/bloco-de-anota-es---APP/" target="_blank">App</a></button>
-                </section>
-            </section>
-        
+      <section >
+        <section class="hidden cards-techs">
+          <section class="hidden card-tech">
+            <div class="">
+              <img
+                class="img-card"
+                src="./img/html5-svgrepo-com.svg"
+                alt="imagem javascript"
+              />
+            </div>
+            <h2>HTML</h2>
+          </section>
+          <section class="hidden card-tech">
+            <div class="">
+              <img
+                class="img-card"
+                src="./img/css3-svgrepo-com.svg"
+                alt="imagem javascript"
+              />
+            </div>
+            <h2>CSS</h2>
+          </section>
+          <section class="hidden card-tech">
+            <div class="">
+              <img
+                class="img-card"
+                src="./img/javascript-svgrepo-com.svg"
+                alt="imagem javascript"
+              />
+            </div>
+            <h2>JAVASCRIPT</h2>
+          </section>
+
+          <section class="hidden card-tech">
+            <div>
+              <img class="img-card" src="./img/bootstrap-svgrepo-com.svg" />
+            </div>
+            <h2>BOOTSTRAP</h2>
+          </section>
+          <section class="hidden card-tech">
+            <div>
+                <img class="img-card" src="./img/php-svgrepo-com.svg" />
+            </div>
+            <h2>PHP</h2>
+          </section>
+          <section class="hidden card-tech">
+            <div>
+              <img class="img-card" src="./img/react-svgrepo-com.svg" />
+            </div>
+            <h2>REACT</h2>
+          </section>
+        </section>
+      </section>
+
+      <!-- inicio SOBRE MIM -->
+      <section class="sections hidden cards-sobre">
+        <div class="sobre">
+          <h2>Sobre <span class="name">mim</span>!</h2>
+          <p>Sou formado em Análise e Desenvolvimento de Sistemas.</p>
+          <p>
+            Tenho grande interesse tanto no desenvolvimento Front-end quanto no
+            Back-end.
+          </p>
+          <p>
+            Atualmente, busco minha primeira oportunidade como programador, onde
+            eu possa contribuir, aprender e evoluir profissionalmente.
+          </p>
+        </div>
+      </section>
+
+      <!-- inicio section portifolio -->
+
+      <h2 class="title-port"><span class="orange">PORTIFÓLIO</span>!</h2>
+      <section class="sections hidden portifolios">
+        <section class="project">
+          <div class="img-project">
+            <img src="./img/telablogliterario.png" alt="logo kbm" />
+          </div>
+          <h3>Blog Literário</h3>
+          <p>Utilizando slider da lib swiper</p>
+          <button class="btn-port">
+            <a
+              href="https://github.com/KevinBaudson/blogliterario"
+              target="_blank"
+              >Code</a
+            >
+          </button>
+          <button class="btn-port">
+            <a
+              href="https://kevinbaudson.github.io/blogliterario/"
+              target="_blank"
+              >App</a
+            >
+          </button>
+        </section>
+        <section class="project">
+          <div class="img-project">
+            <img src="./img/topmovies.png" alt="logo kbm" />
+          </div>
+          <h3>TopFilmes</h3>
+          <p>Projeto com React JS, Integrando API do TMDB</p>
+          <button class="btn-port">
+            <a href="https://github.com/KevinBaudson/topmovies" target="_blank"
+              >Code</a
+            >
+          </button>
+          <button class="btn-port">
+            <a href="https://topmovies-lake.vercel.app/" target="_blank">App</a>
+          </button>
+        </section>
+        <section class="project">
+          <div class="img-project">
+            <img src="./img/app-relogio.png" alt="logo kbm" />
+          </div>
+          <h3>Relógio Digital</h3>
+          <p>Feito com HTML, CSS e JavaScript</p>
+          <button class="btn-port">
+            <a href="https://github.com/KevinBaudson/APPRELOGIO" target="_blank"
+              >Code</a
+            >
+          </button>
+          <button class="btn-port">
+            <a href="https://kevinbaudson.github.io/APPRELOGIO/" target="_blank"
+              >App</a
+            >
+          </button>
+        </section>
+        <section class="project">
+          <div class="img-project">
+            <img src="./img/tela-app.png" alt="Gallery" />
+          </div>
+          <h3>Galeria de Produtos!</h3>
+          <p>Feito com API Fetch - Dummy</p>
+          <button class="btn-port">
+            <a
+              href="https://github.com/KevinBaudson/product_gallery"
+              target="_blank"
+              >Code</a
+            >
+          </button>
+          <button class="btn-port">
+            <a
+              href="https://kevinbaudson.github.io/product_gallery/"
+              target="_blank"
+              >App</a
+            >
+          </button>
+        </section>
+        <section class="project">
+          <div class="img-project">
+            <img src="./img/imagem-app.png" alt="logo kbm" />
+          </div>
+          <h3>TO-DO List</h3>
+          <p>Feito com HTML, CSS e JavaScript</p>
+          <button class="btn-port">
+            <a
+              href="https://github.com/KevinBaudson/bloco-de-anota-es---APP"
+              target="_blank"
+              >Code</a
+            >
+          </button>
+          <button class="btn-port">
+            <a
+              href="https://kevinbaudson.github.io/bloco-de-anota-es---APP/"
+              target="_blank"
+              >App</a
+            >
+          </button>
+        </section>
+      </section>
     </main>
 
     <!-- inicio section footer -->
     <section class="sections hidden footer">
-
-        <section class="list-contact">
-            <h3>Contato:</h3>
-            <ul>
-                <li>
-                    <div class="logo">
-                        <img src="./img/instagram.png" alt="logo do Instagram">
-                        <a href="https://www.instagram.com/kevinbaudson/" target="_blank">Instagram</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="logo">
-                        <img src="./img/github-white.png" alt="logo do GitHub">
-                        <a href="https://www.github.com/kevinbaudson/" target="_blank">GitHub</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="logo">
-                        <img src="./img/facebook.png" alt="logo do Facebook">
-                        <a href="https://www.facebook.com/Kevinbaudson2/?locale=pt_BR" target="_blank">Facebook</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="logo">
-                        <img src="./img/whatsapp.png" alt="logo do whatsapp">
-                        <a href="//wa.me/5528999453325" target="_blank">Whatsapp</a>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section class="email" >
-            <h3>Emails:</h3>
-            <p>
-                kevinbaudson@hotmail.com - 
-                kevinbaudson@gmail.com
-            </p>
-        </section>
-    
-
+      <section class="list-contact">
+        <h3>Contato:</h3>
+        <ul>
+          <li>
+            <div class="logo">
+              <img src="./img/instagram.png" alt="logo do Instagram" />
+              <a href="https://www.instagram.com/kevinbaudson/" target="_blank"
+                ></a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="logo">
+              <img src="./img/github-white.png" alt="logo do GitHub" />
+              <a href="https://www.github.com/kevinbaudson/" target="_blank"
+                ></a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="logo">
+              <img src="./img/facebook.png" alt="logo do Facebook" />
+              <a
+                href="https://www.facebook.com/Kevinbaudson2/?locale=pt_BR"
+                target="_blank"
+                ></a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="logo">
+              <img src="./img/whatsapp.png" alt="logo do whatsapp" />
+              <a href="//wa.me/5528999453325" target="_blank"></a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="email">
+        <h3>Emails:</h3>
+        <p>kevinbaudson@hotmail.com - kevinbaudson@gmail.com</p>
+      </section>
     </section>
-    
-</body>
+  </body>
 </html>
