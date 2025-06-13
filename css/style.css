@@ -44,21 +44,20 @@ section {
   padding: 10px;
 }
 
-.navbar{
-    width: 100%;
-    margin: 20px;
-    /* position: relative; */
-
+.navbar {
+  width: 100%;
+  margin: 20px;
+  /* position: relative; */
 }
 
-.navbar button{
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    cursor: pointer;
+.navbar button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  cursor: pointer;
 }
 
 .name {
@@ -96,10 +95,9 @@ section {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
-.img-me{
+.img-me {
   max-width: 350px;
 }
 
@@ -141,7 +139,6 @@ section {
   filter: drop-shadow(0 0 4px var(--primary-color));
 }
 
-
 .text-techs .sobre {
   max-width: 600px;
   padding: 10px;
@@ -166,6 +163,10 @@ section {
   max-width: 1200px;
 }
 
+.project.hidden-project {
+  display: none;
+}
+
 .project {
   min-height: 400px;
   background: var(--card-bg);
@@ -187,7 +188,6 @@ section {
   box-shadow: 0 12px 40px var(--primary-color);
 }
 
-/* Imagem dos projetos */
 .img-project img {
   width: 100%;
   border-radius: 15px;
@@ -200,7 +200,6 @@ section {
   transform: scale(1.05);
 }
 
-/* Títulos e descrições */
 .project h3 {
   margin: 0.8rem 0 0.4rem;
   font-size: 1.4rem;
@@ -220,12 +219,18 @@ section {
   text-overflow: ellipsis;
 }
 
+.container-ver-mais {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+}
 .btn-port {
-  width: 80%;
+  width: 50%;
   background-color: var(--primary-color);
   border: none;
   color: white;
-  padding: 8px 18px;
+  padding: 15px 10px;
   border-radius: 30px;
   font-weight: 600;
   margin: 0.3rem;
@@ -244,29 +249,27 @@ section {
   text-decoration: none;
 }
 
-
-.footer{
-    display: flex;
+.footer {
+  display: flex;
 }
-.list-contact{
-    min-width: 300px;
-    text-align: center;
+.list-contact {
+  min-width: 300px;
+  text-align: center;
 }
-.list-contact ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.list-contact ul li{
-    width: 40px;
+.list-contact ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-li a{
-    color: var(--primary-color);
+.list-contact ul li {
+  width: 40px;
 }
 
+li a {
+  color: var(--primary-color);
+}
 
 @media screen and (max-width: 780px) {
   .intro {
@@ -274,15 +277,15 @@ li a{
     flex-direction: column;
     gap: 1.5rem;
   }
-  .text-main{
-    width: 80% ;
+  .text-main {
+    width: 80%;
   }
   .cards-techs {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     justify-items: center;
   }
 
-  .email{
+  .email {
     text-align: center;
   }
 }
@@ -297,13 +300,13 @@ li a{
   .img-card {
     max-width: 60px;
   }
-  .footer{
+  .footer {
     flex-direction: column;
   }
-  .list-contact{
+  .list-contact {
     text-align: center;
   }
-  .email{
+  .email {
     text-align: center;
   }
 }
@@ -319,5 +322,15 @@ li a{
 
   .portifolio p {
     font-size: 0.9rem;
+  }
+}
+
+#verMaisBtn {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  #verMaisBtn {
+    display: none;
   }
 }

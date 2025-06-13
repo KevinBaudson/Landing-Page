@@ -28,9 +28,7 @@
     <main id="main">
       <section class="intro">
         <section class="text-main sections hidden">
-          <h1 class="title-h2">
-            Sou <span class="name">Kevin Baudson</span>!
-          </h1>
+          <h1 class="title-h2">Sou <span class="name">Kevin Baudson</span>!</h1>
           <p>Desenvolvedor Web apaixonado por tecnologia.</p>
           <p>
             Atuo no desenvolvimento Front-end e estudo Back-end para me tornar
@@ -42,7 +40,11 @@
         </section>
         <section class="sections hidden">
           <picture>
-            <img class="img-me" src="./img/eu.png" alt="foto principal" class="img-eu"
+            <img
+              class="img-me"
+              src="./img/eu.png"
+              alt="foto principal"
+              class="img-eu"
           /></picture>
         </section>
       </section>
@@ -128,7 +130,7 @@
       <!-- inicio section portifolio -->
 
       <h2 class="title-port"><span class="name">PORTIFÓLIO</span>!</h2>
-      <section class="sections hidden portifolios">
+      <section class="sections hidden portifolios" id="projects-container">
         <section class="project">
           <div class="img-project">
             <img src="./img/searchcountries.png" alt="logo kbm" />
@@ -146,7 +148,8 @@
             <a
               href="https://kevinbaudson.github.io/search-countries"
               target="_blank"
-              >App</a>
+              >App</a
+            >
           </button>
         </section>
 
@@ -158,13 +161,34 @@
           <p>Projeto com HTML e CSS</p>
           <button class="btn-port">
             <a href="https://github.com/KevinBaudson/podcast" target="_blank"
-              >Code</a>
+              >Code</a
+            >
           </button>
           <button class="btn-port">
-            <a href="https://kevinbaudson.github.io/podcast/" target="_blank">App</a>
+            <a href="https://kevinbaudson.github.io/podcast/" target="_blank"
+              >App</a
+            >
           </button>
         </section>
-        
+
+        <section class="project">
+          <div class="img-project">
+            <img src="./img/devfinder-dark.png" alt="logo kbm" />
+          </div>
+          <h3>DevFinder</h3>
+          <p>Feito com React, buscador de dev no GitHub</p>
+          <button class="btn-port">
+            <a href="https://github.com/KevinBaudson/devfinder" target="_blank"
+              >Code</a
+            >
+          </button>
+          <button class="btn-port">
+            <a href="https://kevinbaudson.github.io/devfinder/" target="_blank"
+              >App</a
+            >
+          </button>
+        </section>
+
         <section class="project">
           <div class="img-project">
             <img src="./img/telablogliterario.png" alt="logo kbm" />
@@ -182,7 +206,8 @@
             <a
               href="https://kevinbaudson.github.io/blogliterario/"
               target="_blank"
-              >App</a>
+              >App</a
+            >
           </button>
         </section>
         <section class="project">
@@ -193,7 +218,8 @@
           <p>Projeto com React JS, Integrando API do TMDB</p>
           <button class="btn-port">
             <a href="https://github.com/KevinBaudson/topmovies" target="_blank"
-              >Code</a>
+              >Code</a
+            >
           </button>
           <button class="btn-port">
             <a href="https://topmovies-lake.vercel.app/" target="_blank">App</a>
@@ -207,10 +233,13 @@
           <p>Landing page de nutrição</p>
           <button class="btn-port">
             <a href="https://github.com/KevinBaudson/nutricao" target="_blank"
-              >Code</a>
+              >Code</a
+            >
           </button>
           <button class="btn-port">
-            <a href="https://kevinbaudson.github.io/nutricao/" target="_blank">App</a>
+            <a href="https://kevinbaudson.github.io/nutricao/" target="_blank"
+              >App</a
+            >
           </button>
         </section>
         <section class="project">
@@ -273,6 +302,9 @@
           </button>
         </section>
       </section>
+      <div class="container-ver-mais">
+        <button class="btn-port" id="verMaisBtn">Ver mais projetos</button>
+      </div>
     </main>
 
     <!-- inicio section footer -->
