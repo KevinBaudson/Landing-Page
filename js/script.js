@@ -37,16 +37,25 @@ toggleButton.addEventListener('click', () => {
 document.addEventListener("DOMContentLoaded", () => {
   const projects = document.querySelectorAll("#projects-container .project");
   const verMaisBtn = document.getElementById("verMaisBtn");
-  const isDesktop = window.innerWidth >= 1024;
-  const visibleCount = isDesktop ? 9 : 6;
 
-  // Oculta todos após o limite inicial
+  const isMobile = window.innerWidth < 768;
+  const visibleCount = isMobile ? 6 : projects.length;
+
+  // Oculta os que ultrapassam o limite visível (no mobile)
   projects.forEach((proj, index) => {
     if (index >= visibleCount) {
       proj.classList.add("hidden-project");
     }
   });
 
+  // Só mostra o botão "ver mais" se estiver no mobile e tiver projetos escondidos
+  if (isMobile && projects.length > visibleCount) {
+    verMaisBtn.style.display = "block";
+  } else {
+    verMaisBtn.style.display = "none";
+  }
+
+  // Clique no botão para mostrar todos os projetos
   verMaisBtn.addEventListener("click", () => {
     const hidden = document.querySelectorAll(".hidden-project");
     hidden.forEach((el) => el.classList.remove("hidden-project"));

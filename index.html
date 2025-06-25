@@ -26,9 +26,9 @@
     </header>
 
     <main id="main">
-      <section class="intro">
-        <section class="text-main sections hidden">
-          <h1 class="title-h2">Sou <span class="name">Kevin Baudson</span>!</h1>
+      <section class="sections intro hidden">
+        <div class="text-main">
+          <h1>Sou <span class="name">Kevin Baudson</span>!</h1>
           <p>Desenvolvedor Web apaixonado por tecnologia.</p>
           <p>
             Atuo no desenvolvimento Front-end e estudo Back-end para me tornar
@@ -37,17 +37,14 @@
           <a href="assets/kevin_baudson_curriculo.pdf" target="_blank">
             <button class="btn-curriculo">Currículo</button>
           </a>
-        </section>
-        <section class="sections hidden">
+        </div>
+        <div>
           <picture>
-            <img
-              class="img-me"
-              src="./img/eu.png"
-              alt="foto principal"
-              class="img-eu"
-          /></picture>
-        </section>
+            <img class="img-me" src="./img/eu.png" alt="foto principal" />
+          </picture>
+        </div>
       </section>
+
       <section class="sections hidden text-techs">
         <h2>Tecnologias que <span class="name">utilizo</span>!</h2>
         <p>
@@ -60,7 +57,7 @@
       <section>
         <section class="hidden cards-techs">
           <section class="hidden card-tech">
-            <div class="">
+            <div>
               <img
                 class="img-card"
                 src="./img/html5-svgrepo-com.svg"
@@ -70,7 +67,7 @@
             <h2>HTML</h2>
           </section>
           <section class="hidden card-tech">
-            <div class="">
+            <div>
               <img
                 class="img-card"
                 src="./img/css3-svgrepo-com.svg"
@@ -80,7 +77,7 @@
             <h2>CSS</h2>
           </section>
           <section class="hidden card-tech">
-            <div class="">
+            <div>
               <img
                 class="img-card"
                 src="./img/javascript-svgrepo-com.svg"
@@ -112,7 +109,7 @@
       </section>
 
       <!-- inicio SOBRE MIM -->
-      <section class="sections hidden cards-sobre">
+      <section class="sections hidden">
         <div class="sobre">
           <h2>Sobre <span class="name">mim</span>!</h2>
           <p>Sou formado em Análise e Desenvolvimento de Sistemas.</p>
@@ -128,7 +125,6 @@
       </section>
 
       <!-- inicio section portifolio -->
-
       <h2 class="title-port"><span class="name">PORTIFÓLIO</span>!</h2>
       <section class="sections hidden portifolios" id="projects-container">
         <section class="project">
@@ -137,20 +133,22 @@
           </div>
           <h3>Search Countries</h3>
           <p>Projeto React JS e API Rest Countries</p>
-          <button class="btn-port">
-            <a
-              href="https://github.com/KevinBaudson/search-countries"
-              target="_blank"
-              >Code</a
-            >
-          </button>
-          <button class="btn-port">
-            <a
-              href="https://kevinbaudson.github.io/search-countries"
-              target="_blank"
-              >App</a
-            >
-          </button>
+          <div class="buttons-group">
+            <button class="btn-port">
+              <a
+                href="https://github.com/KevinBaudson/search-countries"
+                target="_blank"
+                >Code</a
+              >
+            </button>
+            <button class="btn-port">
+              <a
+                href="https://kevinbaudson.github.io/search-countries"
+                target="_blank"
+                >App</a
+              >
+            </button>
+          </div>
         </section>
 
         <section class="project">
@@ -159,16 +157,18 @@
           </div>
           <h3>Podcast Template</h3>
           <p>Projeto com HTML e CSS</p>
-          <button class="btn-port">
-            <a href="https://github.com/KevinBaudson/podcast" target="_blank"
-              >Code</a
-            >
-          </button>
-          <button class="btn-port">
-            <a href="https://kevinbaudson.github.io/podcast/" target="_blank"
-              >App</a
-            >
-          </button>
+          <div class="buttons-group">
+            <button class="btn-port">
+              <a href="https://github.com/KevinBaudson/podcast" target="_blank"
+                >Code</a
+              >
+            </button>
+            <button class="btn-port">
+              <a href="https://kevinbaudson.github.io/podcast/" target="_blank"
+                >App</a
+              >
+            </button>
+          </div>
         </section>
 
         <section class="project">
@@ -177,16 +177,22 @@
           </div>
           <h3>DevFinder</h3>
           <p>Feito com React, buscador de dev no GitHub</p>
-          <button class="btn-port">
-            <a href="https://github.com/KevinBaudson/devfinder" target="_blank"
-              >Code</a
-            >
-          </button>
-          <button class="btn-port">
-            <a href="https://kevinbaudson.github.io/devfinder/" target="_blank"
-              >App</a
-            >
-          </button>
+          <div class="buttons-group">
+            <button class="btn-port">
+              <a
+                href="https://github.com/KevinBaudson/devfinder"
+                target="_blank"
+                >Code</a
+              >
+            </button>
+            <button class="btn-port">
+              <a
+                href="https://kevinbaudson.github.io/devfinder/"
+                target="_blank"
+                >App</a
+              >
+            </button>
+          </div>
         </section>
 
         <section class="project">
@@ -195,120 +201,98 @@
           </div>
           <h3>Blog Literário</h3>
           <p>Utilizando slider da lib swiper</p>
-          <button class="btn-port">
-            <a
-              href="https://github.com/KevinBaudson/blogliterario"
-              target="_blank"
-              >Code</a
-            >
-          </button>
-          <button class="btn-port">
-            <a
-              href="https://kevinbaudson.github.io/blogliterario/"
-              target="_blank"
-              >App</a
-            >
-          </button>
+          <div class="buttons-group">
+            <button class="btn-port">
+              <a
+                href="https://github.com/KevinBaudson/blogliterario"
+                target="_blank"
+                >Code</a
+              >
+            </button>
+            <button class="btn-port">
+              <a
+                href="https://kevinbaudson.github.io/blogliterario/"
+                target="_blank"
+                >App</a
+              >
+            </button>
+          </div>
         </section>
+
         <section class="project">
           <div class="img-project">
             <img src="./img/topmovies.png" alt="logo kbm" />
           </div>
           <h3>TopFilmes</h3>
           <p>Projeto com React JS, Integrando API do TMDB</p>
-          <button class="btn-port">
-            <a href="https://github.com/KevinBaudson/topmovies" target="_blank"
-              >Code</a
-            >
-          </button>
-          <button class="btn-port">
-            <a href="https://topmovies-lake.vercel.app/" target="_blank">App</a>
-          </button>
+          <div class="buttons-group">
+            <button class="btn-port">
+              <a
+                href="https://github.com/KevinBaudson/topmovies"
+                target="_blank"
+                >Code</a
+              >
+            </button>
+            <button class="btn-port">
+              <a href="https://topmovies-lake.vercel.app/" target="_blank"
+                >App</a
+              >
+            </button>
+          </div>
         </section>
+
         <section class="project">
           <div class="img-project">
             <img src="./img/landing-nutri.png" alt="logo kbm" />
           </div>
           <h3>Nutri|Inteligente</h3>
           <p>Landing page de nutrição</p>
-          <button class="btn-port">
-            <a href="https://github.com/KevinBaudson/nutricao" target="_blank"
-              >Code</a
-            >
-          </button>
-          <button class="btn-port">
-            <a href="https://kevinbaudson.github.io/nutricao/" target="_blank"
-              >App</a
-            >
-          </button>
+          <div class="buttons-group">
+            <button class="btn-port">
+              <a href="https://github.com/KevinBaudson/nutricao" target="_blank"
+                >Code</a
+              >
+            </button>
+            <button class="btn-port">
+              <a href="https://kevinbaudson.github.io/nutricao/" target="_blank"
+                >App</a
+              >
+            </button>
+          </div>
         </section>
-        <!-- <section class="project">
-          <div class="img-project">
-            <img src="./img/app-relogio.png" alt="logo kbm" />
-          </div>
-          <h3>Relógio Digital</h3>
-          <p>Feito com HTML, CSS e JavaScript</p>
-          <button class="btn-port">
-            <a href="https://github.com/KevinBaudson/APPRELOGIO" target="_blank"
-              >Code</a
-            >
-          </button>
-          <button class="btn-port">
-            <a href="https://kevinbaudson.github.io/APPRELOGIO/" target="_blank"
-              >App</a
-            >
-          </button>
-        </section> -->
-        <!-- <section class="project">
-          <div class="img-project">
-            <img src="./img/tela-app.png" alt="Gallery" />
-          </div>
-          <h3>Galeria de Produtos!</h3>
-          <p>Feito com API Fetch - Dummy</p>
-          <button class="btn-port">
-            <a
-              href="https://github.com/KevinBaudson/product_gallery"
-              target="_blank"
-              >Code</a
-            >
-          </button>
-          <button class="btn-port">
-            <a
-              href="https://kevinbaudson.github.io/product_gallery/"
-              target="_blank"
-              >App</a
-            >
-          </button>
-        </section> -->
+
         <section class="project">
           <div class="img-project">
             <img src="./img/todolist.png" alt="logo kbm" />
           </div>
           <h3>TO-DO List</h3>
           <p>Feito com HTML, CSS e JavaScript</p>
-          <button class="btn-port">
-            <a
-              href="https://github.com/KevinBaudson/bloco-de-anota-es---APP"
-              target="_blank"
-              >Code</a
-            >
-          </button>
-          <button class="btn-port">
-            <a
-              href="https://kevinbaudson.github.io/bloco-de-anota-es---APP/"
-              target="_blank"
-              >App</a
-            >
-          </button>
+          <div class="buttons-group">
+            <button class="btn-port">
+              <a
+                href="https://github.com/KevinBaudson/bloco-de-anota-es---APP"
+                target="_blank"
+                >Code</a
+              >
+            </button>
+            <button class="btn-port">
+              <a
+                href="https://kevinbaudson.github.io/bloco-de-anota-es---APP/"
+                target="_blank"
+                >App</a
+              >
+            </button>
+          </div>
         </section>
       </section>
+
       <div class="container-ver-mais">
-        <button class="btn-port" id="verMaisBtn">Ver mais projetos</button>
+        <button id="verMaisBtn">Ver mais ▼</button>
       </div>
     </main>
 
     <!-- inicio section footer -->
-    <section class="sections hidden footer">
+    <footer class="hidden footer">
       <section class="list-contact">
         <h3>Contato:</h3>
         <ul>
@@ -357,6 +341,6 @@
           >
         </p>
       </section>
-    </section>
+    </footer>
   </body>
 </html>
