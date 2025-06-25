@@ -364,6 +364,12 @@ li a {
   }
 }
 
+@media screen and (max-width: 560px) {
+  .footer {
+   flex-direction: column; 
+  }
+}
+
 @media screen and (max-width: 480px) {
   .title-port {
     font-size: 1.8rem;
