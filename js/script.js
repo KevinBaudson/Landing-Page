@@ -37,7 +37,8 @@ toggleButton.addEventListener('click', () => {
 document.addEventListener("DOMContentLoaded", () => {
   const projects = document.querySelectorAll("#projects-container .project");
   const verMaisBtn = document.getElementById("verMaisBtn");
-  const visibleCount = 6;
+  const isDesktop = window.innerWidth >= 1024;
+  const visibleCount = isDesktop ? 9 : 6;
 
   // Oculta todos após o limite inicial
   projects.forEach((proj, index) => {
