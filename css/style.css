@@ -328,9 +328,3 @@ li a {
 #verMaisBtn {
   display: block;
 }
-
-@media (min-width: 768px) {
-  #verMaisBtn {
-    display: none;
-  }
-}
