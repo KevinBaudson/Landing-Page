@@ -13,24 +13,39 @@ elements.forEach((element) => {
   myObserver.observe(element);
 });
 
-// Alternância de tema claro/escuro
+// Alternância de tema claro/escuro com ícones Font Awesome
 const toggleButton = document.getElementById('toggle-theme');
 const body = document.body;
+const icon = toggleButton.querySelector('i');
 
+function updateIcon() {
+  if (body.classList.contains('dark-theme')) {
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+  } else {
+    icon.classList.remove('fa-sun');
+    icon.classList.add('fa-moon');
+  }
+}
+
+// Aplica o tema salvo no localStorage ao carregar a página
 if (localStorage.getItem('theme') === 'dark') {
   body.classList.add('dark-theme');
-  toggleButton.textContent = '☀️';
+} else {
+  body.classList.remove('dark-theme');
 }
+updateIcon();
 
 toggleButton.addEventListener('click', () => {
   body.classList.toggle('dark-theme');
+
   if (body.classList.contains('dark-theme')) {
-    toggleButton.textContent = '☀️';
     localStorage.setItem('theme', 'dark');
   } else {
-    toggleButton.textContent = '🌙';
     localStorage.setItem('theme', 'light');
   }
+
+  updateIcon();
 });
 
 // ====== FUNCIONALIDADE "VER MAIS" PROJETOS ======
@@ -55,7 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
     verMaisBtn.style.display = "none";
   }
 
-  // Clique no botão para mostrar todos os projetos
   verMaisBtn.addEventListener("click", () => {
     const hidden = document.querySelectorAll(".hidden-project");
     hidden.forEach((el) => el.classList.remove("hidden-project"));
