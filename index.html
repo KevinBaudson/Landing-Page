@@ -33,7 +33,7 @@
     </header>
 
     <main id="main">
-      <section class="sections intro hidden">
+      <section id="home" class="sections intro hidden">
         <div class="text-main">
           <h1>Sou <span class="name">Kevin Baudson</span>!</h1>
           <p>Desenvolvedor Web apaixonado por tecnologia.</p>
@@ -41,8 +41,17 @@
             Atuo no desenvolvimento Front-end e estudo Back-end para me tornar
             um profissional completo.
           </p>
-          <a href="assets/kevin_baudson_miranda_curriculo.pdf" target="_blank">
-            <button class="btn-curriculo">Currículo</button>
+            
+            <div class="nav-menu">
+            <a class="curriculo" href="assets/kevin_baudson_miranda_curriculo.pdf" target="_blank">Currículo</a>
+            
+          <ul>
+            <li><a href="#techs">Techs</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#port">Port</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
           </a>
         </div>
         <div>
@@ -52,7 +61,7 @@
         </div>
       </section>
 
-      <section class="sections hidden text-techs">
+      <section id="techs" class="sections hidden text-techs">
         <h2>Tecnologias que <span class="name">utilizo</span>!</h2>
         <p>
           Utilizo ferramentas e linguagens modernas para criar aplicações web
@@ -116,7 +125,7 @@
       </section>
 
       <!-- inicio SOBRE MIM -->
-      <section class="sections hidden">
+      <section id="about" class="sections hidden">
         <div class="sobre">
           <h2>Sobre <span class="name">mim</span>!</h2>
           <p>Sou formado em Análise e Desenvolvimento de Sistemas.</p>
@@ -132,7 +141,7 @@
       </section>
 
       <!-- inicio section portifolio -->
-      <h2 class="title-port"><span class="name">PORTIFÓLIO</span>!</h2>
+      <h2 id="port"  class="title-port"><span class="name">PORTIFÓLIO</span>!</h2>
       <section class="sections hidden portifolios" id="projects-container">
         <section class="project">
           <div class="img-project">
@@ -321,10 +330,15 @@
       <div class="container-ver-mais">
         <button id="verMaisBtn">Ver mais ▼</button>
       </div>
+       <div class="button-up">
+        <a href="#">
+          <i class="fa-regular fa-circle-up fa-2x"></i>
+        </a>
+      </div>
     </main>
 
     <!-- inicio section footer -->
-    <footer class="footer">
+    <footer id="contact" class="footer">
   <div class="footer-container">
     <div class="footer-contact">
       <h3>Contato</h3>
