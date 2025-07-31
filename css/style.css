@@ -381,7 +381,8 @@ section {
 .button-up {
   position: fixed;
   right: 40px;
-  top: 90vh;
+  bottom: calc(20px + env(safe-area-inset-bottom));
+  z-index: 999;
 }
 .button-up a i {
   color: var(--text-color);
